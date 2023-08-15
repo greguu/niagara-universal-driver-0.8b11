@@ -13,6 +13,8 @@ ifneq (, $(wildcard $(IXGBE_SRC_DIR)/ixgbe.h))
 endif
 EXTRA_CFLAGS += -Wall
 EXTRA_CFLAGS += -Werror
+EXTRA_CFLAGS += -Wimplicit-fallthrough=0
+EXTRA_CFLAGS += -Wno-incompatible-pointer-types
 
 export EXTRA_CFLAGS
 
